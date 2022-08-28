@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d4e6dd;
+    scroll-behavior: smooth;
+}
+
+.contenedor {
+    width: 100%;
+    margin: 0 auto;
+    height: 1000px;
+    background-color: #d4e6dd;
+    
+}
+
+header {
+    width: 100%;
+    height: 180px;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 200;
+    color: black;
+}
+
+
+.menu li a:hover{
+    color: #1d3127;
+    transition: all .9s;
+}
+
+.submenu {
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #361916;
+    background-color: #d4e6dd;
+    border: 2px solid #a8afa8;
+}
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+.menu--logo{
+    width: 10%;
+}
+
+.menu--submenu{
+    width: 10%;
+    cursor: pointer;
+}
+
+
+.menu--logo img{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+
+}
+
+.header--linea{
+    height: 20px;
+}
+
+.parte1{
+    width: 100%;
+    height: 800px;
+    background-color: #4F8268;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.parte1 div img{
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.textos {
+    height: 600px;
+    margin-left: 20px;
+}
+
+.textos > .textos--titulo {
+    font-size: 200px;
+}
+
+
+.textos--titulo2 {
+    font-size: 40px;
+}
+.textos h4 {
+    font-size: 25px;
+    position: relative;
+    left: 490px;
+    color: #d4e6dd;
+}
+
+.textos h2 {
+    font-size: 25px;
+    position: relative;
+    top: 30px;
+    color: #d4e6dd;
+}
+
+.button{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 850px;
+    right: 750px;
+    border-radius: 10px;
+    background-color: #E06A2E;
+    color: #d4e6dd;
+    font-size: 20px;
+    border: 2px solid #d4e6dd;
+    border-right: black;
+    border-bottom: black;
+    box-shadow: 3px 3px 20px #361916;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.somos{
+    width: 100%;
+    background-color: white;
+    height: 1800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.somos > div > div > p{
+    text-align: justify;
+}
+
+.somos--nosotros {
+    display: flex;
+    margin-left: 430px;
+    margin-right: 430px;
+}
+
+.somos--nosotros div {
+    margin-right: 80px;
+}
+
+
+.somos--nosotros h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #E06A2E;
+}
+
+.somos--nosotros p {
+    font-size: 20px;
+    font-weight: 100;
+    color: rgb(55, 54, 54);
+}
+
+.somos--nosotros img {
+    border-radius: 20px;
+}
+
+
+.somos--voluntariado{
+    margin-top: 50px;
+    margin-left: 430px;
+    margin-right: 430px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.somos--voluntariado div {
+    margin-left: 80px;
+}
+.somos--voluntariado img {
+    border-radius: 20px;
+}
+
+.somos--voluntariado h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #4F8268;
+}
+
+.somos--voluntariado p {
+    font-size: 20px;
+    font-weight: 100;
+    color: rgb(55, 54, 54);
+}
+
+
+.somos--contactanos{
+    height: 450px;
+    width: 55%;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(224,106,46,1) 80%, rgba(255,255,255,1) 100%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 120px;
+}
+
+.somos--contactanos h1 {
+    font-size: 40px;
+    margin: 20px;
+    color: white;
+
+}
+
+.somos--contactanos h4 {
+    font-size: 25px;
+}
+
+.somos--contactanos form p{
+    font-size: 20px;
+    font-weight: 100;
+
+}
+
+
+
+.form--boton{
+    position: relative;
+    top: 60px;
+    right: 50px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #4F8268;
+    color: white;
+    font-size: 20px;
+    border: 2px solid #E06A2E;
+
+}
+
+
+
+.tienda {
+    width: 100%;
+    height: 800px;
+    background-color: #1B3628;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tienda--mascota{
+    width: 25%;
+    height: 600px;
+    background-color: rgb(62, 65, 65);
+    margin: 20px;
+    border-radius: 20px;
+    background-image: url("logo/perro\ y\ chica.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dos {
+    background-image: url("logo/gato\ y\ chica.jpg");
+    background-size: cover;
+}
+
+.tres {
+    background-image: url("logo/perro\ y\ gato.jpg");
+    background-size: cover;
+}
+
+
+
+.rotar {
+    transform: rotate(270deg);
+    font-size: 180px;
+    position: absolute;
+    right: 1540px;
+    color: #4F8268;
+}
+
+.uno {
+    transform: rotate(0deg);
+    font-size: 60px;
+    top: 2840px;
+    right: 200px;
+    color: #d4e6dd;
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4e6dd;
+    width: 450px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(200, 204, 212, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    top: 450px;
+    left: 50px;
+    display: none;
+    transition: all .9s ease-out;
+}
+
+.tienda--mascota:hover .caja{
+    display: block;
+}
